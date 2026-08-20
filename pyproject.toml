@@ -56,6 +56,7 @@ changelog = "https://github.com/google-research/mapl/blob/main/CHANGELOG.md"
 # Installed through `pip install -e .[dev]`
 dev = [
     "pytest",
+    "pytest-cov",
     "pytest-xdist",
     "pylint>=2.6.0",
     "pyink",
@@ -69,6 +70,7 @@ docs = [
 [dependency-groups]
 dev = [
     "pytest",
+    "pytest-cov",
     "pytest-xdist",
     "pylint>=2.6.0",
     "pyink",
@@ -77,9 +79,17 @@ dev = [
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["*_test.py"]
-addopts = "--ignore=tests/ime_test.py"
+addopts = "--ignore=tests/ime_test.py --cov=mapl --cov-report=term-missing"
+
+[tool.coverage.run]
+source = ["mapl"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true
 
 [tool.pyink]
+
 
 # Formatting configuration to follow Google style-guide
 line-length = 80
