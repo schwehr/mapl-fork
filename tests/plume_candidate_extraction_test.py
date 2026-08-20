@@ -17,9 +17,9 @@ from absl.testing import absltest
 from absl.testing import parameterized
 from mapl import data_types
 from mapl import plume_candidate_extraction as extraction
-from mapl import test_utils
 import numpy as np
 import shapely.geometry
+from tests import test_utils
 
 
 class PipesTest(parameterized.TestCase):
