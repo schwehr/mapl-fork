@@ -50,11 +50,6 @@ MAPL (Methane Analysis and Plume Localization) is a scientific library and infer
 
 ```
 mapl-fork/
-├── .github/                                 # GitHub workflows and automation configurations
-│   ├── dependabot.yaml                      # Dependabot configuration for automated dependency updates
-│   └── workflows/
-│       ├── pre-commit.yaml                  # Pre-commit CI workflow
-│       └── pytest.yaml                      # Test suite CI workflow
 ├── AGENTS.md                                # Repository instructions and architectural guide for agents
 ├── CHANGELOG.md                             # Release notes and version history
 ├── CONTRIBUTING.md                          # Contribution guidelines
