@@ -40,6 +40,7 @@ dependencies = [
     "toolz",
     "utm",
     "xarray",
+    "ddeq>=1.1",
 ]
 
 # `version` is automatically set by flit to use `mapl.__version__`
