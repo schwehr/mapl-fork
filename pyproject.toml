@@ -116,3 +116,22 @@ exclude = [
   # Do not release tests files on PyPI.
   "**/*_test.py",
 ]
+
+[tool.pyrefly]
+project-includes = [
+    "**/*.py*",
+    "**/*.ipynb",
+]
+
+[tool.pyrefly.errors]
+bad-argument-type = "ignore"
+bad-assignment = "ignore"
+bad-index = "ignore"
+bad-keyword-argument = "ignore"
+invalid-argument = "ignore"
+missing-attribute = "ignore"
+missing-import = "ignore"
+not-a-type = "ignore"
+not-iterable = "ignore"
+unexpected-keyword = "ignore"
+unsupported-operation = "ignore"
