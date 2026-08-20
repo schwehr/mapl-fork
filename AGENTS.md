@@ -138,7 +138,22 @@ mapl-fork/
     lines or entries. These are reserved for internal Piper/CL tools and must be
     omitted from all git commits in this repository.
 
-## Package Management and Lockfile Updates
+## Package Ecosystem and Environment Management
+
+This repository uses **uv** as its primary Python package manager, virtual environment coordinator, and dependency resolver.
+
+### Tooling & Commands
+
+- **Environment & Lockfile**:
+  - Python version: Defined in `.python-version` (`3.13`).
+  - Pinned lockfile: `uv.lock`.
+  - Dependabot ecosystem: Configured with `package-ecosystem: "uv"` in `.github/dependabot.yaml` for automated dependency bumps.
+- **Development & Testing Workflows**:
+  - Install git pre-commit hooks: `pre-commit install`
+  - Run the test suite: `uv run pytest`
+  - Run all pre-commit and linter checks: `uv run pre-commit run --all-files`
+
+### Package Management and Lockfile Updates
 
 When resolving dependencies or updating `uv.lock`, always use the public PyPI index (`https://pypi.org/simple`).
 

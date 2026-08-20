@@ -40,6 +40,24 @@ First, install the library and its dependencies:
 pip install .
 ```
 
+### Development Setup
+
+For development, install all dependencies with developer tools using `uv`:
+
+```bash
+# Set up virtual environment and dependencies
+uv sync --all-extras
+
+# Install git pre-commit hooks
+pre-commit install
+
+# Run the test suite
+uv run pytest
+
+# Run pre-commit checks on all files
+uv run pre-commit run --all-files
+```
+
 ## Data Access
 
 To run inference, you need to download both the **Radiance (RAD)** and
