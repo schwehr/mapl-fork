@@ -135,3 +135,6 @@ not-a-type = "ignore"
 not-iterable = "ignore"
 unexpected-keyword = "ignore"
 unsupported-operation = "ignore"
+
+[tool.codespell]
+skip = "*.lock"

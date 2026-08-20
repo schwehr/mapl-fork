@@ -55,7 +55,7 @@ def compute_ime(
     lng: Longitude of the source.
     wind: A pair of U-component of the wind vector (m/s) and V-component of the
       wind vector (m/s) in the format (wind_u, wind_v).
-    bounding_box: A tupple of bounding box coordinates (min_lat, min_lon,
+    bounding_box: A tuple of bounding box coordinates (min_lat, min_lon,
       max_lat, max_lon) in the format (min_lat, min_lon, max_lat, max_lon).
     plume_enh_ppm_m: A 2D array of the plume enhancement in ppm-m.
     plume_mask: A 2D array of the plume mask.

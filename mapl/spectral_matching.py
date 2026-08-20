@@ -414,7 +414,7 @@ class SpectralVetting:
     except ValueError as e:
       logging.warning('Value error when optimizing least squares: %s', e)
       # If the initial guess is out of bounds for least squares then return
-      # None. This only happens somtimes during initial stages of training where
+      # None. This only happens sometimes during initial stages of training where
       # the model predicts random noise.
       return None
 
