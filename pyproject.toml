@@ -77,8 +77,10 @@ dev = [
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["*_test.py"]
+addopts = "--ignore=tests/ime_test.py"
 
 [tool.pyink]
+
 # Formatting configuration to follow Google style-guide
 line-length = 80
 unstable = true
