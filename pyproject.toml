@@ -50,6 +50,7 @@ homepage = "https://github.com/google-research/mapl"
 repository = "https://github.com/google-research/mapl"
 changelog = "https://github.com/google-research/mapl/blob/main/CHANGELOG.md"
 
+
 [project.optional-dependencies]
 # Installed through `pip install -e .[dev]`
 dev = [
@@ -58,12 +59,23 @@ dev = [
     "pylint>=2.6.0",
     "pyink",
 ]
-
 # Installed through `pip install '.[docs]'`.
 docs = [
     # Install `apitree` with all extensions (sphinx, theme,...)
     "sphinx-apitree[ext]",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-xdist",
+    "pylint>=2.6.0",
+    "pyink",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["*_test.py"]
 
 [tool.pyink]
 # Formatting configuration to follow Google style-guide
