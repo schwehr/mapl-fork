@@ -50,6 +50,11 @@ MAPL (Methane Analysis and Plume Localization) is a scientific library and infer
 
 ```
 mapl-fork/
+├── .github/                                 # GitHub workflows and automation configurations
+│   ├── dependabot.yaml                      # Dependabot configuration for automated dependency updates
+│   └── workflows/
+│       ├── pre-commit.yaml                  # Pre-commit CI workflow
+│       └── pytest.yaml                      # Test suite CI workflow
 ├── AGENTS.md                                # Repository instructions and architectural guide for agents
 ├── CHANGELOG.md                             # Release notes and version history
 ├── CONTRIBUTING.md                          # Contribution guidelines
@@ -138,7 +143,22 @@ mapl-fork/
     lines or entries. These are reserved for internal Piper/CL tools and must be
     omitted from all git commits in this repository.
 
-## Package Management and Lockfile Updates
+## Package Ecosystem and Environment Management
+
+This repository uses **uv** as its primary Python package manager, virtual environment coordinator, and dependency resolver.
+
+### Tooling & Commands
+
+- **Environment & Lockfile**:
+  - Python version: Defined in `.python-version` (`3.13`).
+  - Pinned lockfile: `uv.lock`.
+  - Dependabot ecosystem: Configured with `package-ecosystem: "uv"` in `.github/dependabot.yaml` for automated dependency bumps.
+- **Development & Testing Workflows**:
+  - Install git pre-commit hooks: `pre-commit install`
+  - Run the test suite: `uv run pytest`
+  - Run all pre-commit and linter checks: `uv run pre-commit run --all-files`
+
+### Package Management and Lockfile Updates
 
 When resolving dependencies or updating `uv.lock`, always use the public PyPI index (`https://pypi.org/simple`).
 
