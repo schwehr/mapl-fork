@@ -150,3 +150,8 @@ unsupported-operation = "ignore"
 
 [tool.codespell]
 skip = "*.lock"
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
+default = true
