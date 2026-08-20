@@ -4,7 +4,7 @@
 name = "mapl"
 description = "Methane Analysis and Plume Localization (MAPL): A library for detecting and analyzing methane plumes from hyperspectral EMIT data."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.14"
 license = {file = "LICENSE"}
 authors = [{name="EOScience Team", email = "eoscience-eng@google.com"}]
 classifiers = [  # List of https://pypi.org/classifiers/
@@ -13,7 +13,7 @@ classifiers = [  # List of https://pypi.org/classifiers/
     "Development Status :: 4 - Beta",
     "Environment :: Console",
     "Operating System :: POSIX :: Linux",
-    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.14",
 ]
 keywords = []
 
