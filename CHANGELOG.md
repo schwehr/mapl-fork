@@ -18,6 +18,11 @@ To release a new version (e.g. from `1.0.0` -> `2.0.0`):
 
 ## [Unreleased]
 
+### Removed
+
+- Removed `mapl.ime` and `tests/ime_test.py`.
+- Removed `ddeq` dependency and cleaned up transitive dependencies.
+
 ## [0.1.0]
 
 * Initial release
