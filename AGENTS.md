@@ -38,10 +38,7 @@ MAPL (Methane Analysis and Plume Localization) is a scientific library and infer
    - Fits a combined physical transmittance model ($T_{model} = \text{Polynomial Baseline} \times \text{Gas Transmission}(conc)$) across methane absorption bands ($2100\text{--}2440\text{ nm}$) using non-linear least squares (`scipy.optimize.least_squares` with soft L1 loss).
    - Calculates vetting metrics: normalized mean absolute difference (`d_norm`), spectral correlation distance (`d_cor`), and retrieved concentration (`fitted_conc`).
 
-6. **Emission Quantification (`mapl.ime`)**:
-   - Computes Integrated Methane Enhancement (IME) and derives emission rates ($kg/h$) using the `ddeq` library and wind vectors (e.g., ERA5 or HRRR 10m wind fields).
-
-7. **Serialization & Export (`mapl.io_lib`)**:
+6. **Serialization & Export (`mapl.io_lib`)**:
    - Exports structured candidate and predicted plume datasets to Apache Parquet format using PyArrow schemas with WKT geometries, spectral metrics, and emission statistics.
 
 ---
@@ -72,7 +69,6 @@ mapl-fork/
 │   ├── plume_candidate_extraction.py        # Mask vectorization, center-of-mass origin localization, filtering
 │   ├── spectral_matching.py                 # SpectralVetting class, transmittance modeling, and least squares fitting
 │   ├── satellite_gas_statistics_v14_emit.npz# Bundled spectral response and transmittance lookup tables
-│   ├── ime.py                               # Integrated Methane Enhancement (IME) emission rate calculations
 │   ├── granule_inference.py                 # MaplEmitInference pipeline coordinator for full granule processing
 │   ├── single_granule_inference.py          # Standalone CLI entrypoint for single granule batch inference
 │   ├── io_lib.py                            # PyArrow schema definitions and Parquet serialization helpers
@@ -87,7 +83,6 @@ mapl-fork/
     ├── clustering_test.py                   # Tests for spatial & correlation-based DBSCAN clustering
     ├── deduplication_test.py                # Tests for deduplication, candidate capping, ensembling, and masks
     ├── granule_inference_test.py            # Tests for tiled inference, patch cropping/padding, and UTM conversion
-    ├── ime_test.py                          # Tests for IME emission rate calculations
     ├── plume_candidate_extraction_test.py   # Tests for candidate extraction, polygonization, and origin finding
     └── spectral_matching_test.py            # Tests for NPZ data loading, observed spectra, and spectral fitting
 ```

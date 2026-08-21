@@ -40,7 +40,6 @@ dependencies = [
     "toolz",
     "utm",
     "xarray",
-    "ddeq>=1.1",
 ]
 
 # `version` is automatically set by flit to use `mapl.__version__`
@@ -79,7 +78,7 @@ dev = [
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["*_test.py"]
-addopts = "--ignore=tests/ime_test.py --cov=mapl --cov-report=term-missing"
+addopts = "--cov=mapl --cov-report=term-missing"
 
 [tool.coverage.run]
 source = ["mapl"]
