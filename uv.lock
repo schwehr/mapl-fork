@@ -217,8 +217,8 @@ name = "array-record"
 version = "0.8.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "absl-py", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
-    { name = "etils", extra = ["epath"], marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
+    { name = "absl-py" },
+    { name = "etils", extra = ["epath"] },
 ]
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e9/b0/9f649781c8e630cbb8724fb56627430b4249b51e8536e6e0a31d6f85f147/array_record-0.8.3-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:adfe6c92918363747539c0caa579f568f75aac079ad7bbd4ebcf7fdb02e5461b", size = 4838733, upload-time = "2025-11-13T16:15:39.767Z" },
@@ -2612,7 +2612,7 @@ name = "pexpect"
 version = "4.9.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "ptyprocess", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
+    { name = "ptyprocess" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/42/92/cc564bf6381ff43ce1f4d06852fc19a2f11d180f23dc32d9588bee2f149d/pexpect-4.9.0.tar.gz", hash = "sha256:ee7d41123f3c9911050ea2c2dac107568dc43b2d3b0c7557a33212c398ead30f", size = 166450, upload-time = "2023-11-25T09:07:26.339Z" }
 wheels = [
@@ -3183,7 +3183,7 @@ wheels = [
 
 [[package]]
 name = "rasterio"
-version = "1.5.1"
+version = "1.5.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "affine" },
@@ -3193,14 +3193,14 @@ dependencies = [
     { name = "numpy" },
     { name = "pyparsing" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1d/1a/ee73b447f1623a6bb6490af08d4bbed3fb6e38b0adc54553a0d244d4103a/rasterio-1.5.1.tar.gz", hash = "sha256:c1b6ae15f4ccad704f1fe8417da5c2250145c7bcdb91acb53833bf5aefdd9e48", size = 457868, upload-time = "2026-08-08T02:45:15.844Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/51/90/bd0a124e164f5fe776084c9731b43ab136b31281a18608e617cdb5f2be70/rasterio-1.5.2.tar.gz", hash = "sha256:e65a15b7bd22ce8f8ce8159856669dc9fafabf66cde6156e8f8e71d55abcd515", size = 458586, upload-time = "2026-09-30T15:57:14.889Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c9/f0/d3c613d845b35a3800b812f0fe0351675f6310972bbd6349f844499ebd6a/rasterio-1.5.1-cp313-cp313-macosx_14_0_arm64.whl", hash = "sha256:937944c445d4ea4d6969e9dbfcf305143c05fc4df2f8fadfa360cb2d0f65d7b0", size = 23227832, upload-time = "2026-08-08T02:35:42.525Z" },
-    { url = "https://files.pythonhosted.org/packages/e9/ca/54c1976340df39ea6bd77ff4b41eec932ff260b635a8512ceae0945595c4/rasterio-1.5.1-cp313-cp313-macosx_15_0_x86_64.whl", hash = "sha256:e863b614cadad435a4394792b6cdc84324b15197629ad5a20c8d56cbc4eeff92", size = 24947000, upload-time = "2026-08-08T02:34:28.155Z" },
-    { url = "https://files.pythonhosted.org/packages/9f/be/b759df521f9d3df913af5bf71a3799305f5cabd5183b51319907b5738d5d/rasterio-1.5.1-cp313-cp313-manylinux_2_28_aarch64.whl", hash = "sha256:b117209922784ef7948f702a0e9eb26be744f4b24d31f5eb97c45c0f04e2e4c3", size = 36842195, upload-time = "2026-08-08T02:36:35.343Z" },
-    { url = "https://files.pythonhosted.org/packages/f2/bd/1e84b24be51ce3950c73832c098b4cab49190ffdf343f13b51a35ca73a00/rasterio-1.5.1-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:9093a9277559ac0f954d9a0266886bc4037e3ffd7a40837f6ea6486a96c8c258", size = 38311716, upload-time = "2026-08-08T02:32:56.612Z" },
-    { url = "https://files.pythonhosted.org/packages/9e/e8/676dd01db4e8a1735b6d893cd0f76920dab41d1b508579a7f5778ee1cf3c/rasterio-1.5.1-cp313-cp313-win_amd64.whl", hash = "sha256:b3686865af2c67114f5dfb67df483db61bccad4078083a3dad481ea035e5d701", size = 30619960, upload-time = "2026-08-08T02:37:55.016Z" },
-    { url = "https://files.pythonhosted.org/packages/5c/7f/182833e6a7ad02191a72c8e0aa8ab4283379cf2f7c92c4d3ca0f9c881848/rasterio-1.5.1-cp313-cp313-win_arm64.whl", hash = "sha256:0898355908ed3614ba1415532432cf4a1a308b189b2c9d8307a26a44bcb1713b", size = 28856656, upload-time = "2026-08-08T02:39:03.232Z" },
+    { url = "https://files.pythonhosted.org/packages/3d/09/6364633f9716019abb748e1f3f8166f108b905d850b73445dd8bd05fb811/rasterio-1.5.2-cp313-cp313-macosx_15_0_arm64.whl", hash = "sha256:de9db8f891c63e6a1d8deb7d4c8fe703795245ad3b2572d35e0ec76b39495f29", size = 23461761, upload-time = "2026-09-30T15:55:48.982Z" },
+    { url = "https://files.pythonhosted.org/packages/d8/dd/5dc8460b5e090bf931e1c2e69e8662946eac46b8d426eab7625ec9015b34/rasterio-1.5.2-cp313-cp313-macosx_15_0_x86_64.whl", hash = "sha256:19b8849ac84c6c26208314c7e516062b8aaabc1aa45f06c7edf22d5b098a7f84", size = 25080627, upload-time = "2026-09-30T15:55:51.441Z" },
+    { url = "https://files.pythonhosted.org/packages/3c/6b/f8cc1a79b926bd3e10766ad4718082836b6ad433ac72c05c8ed2ac09d382/rasterio-1.5.2-cp313-cp313-manylinux_2_28_aarch64.whl", hash = "sha256:f85cec5d23e7cd8d22a4b4edba11f63a94008c396a03433b8fb260140c00cb90", size = 37640915, upload-time = "2026-09-30T15:55:53.966Z" },
+    { url = "https://files.pythonhosted.org/packages/d1/ef/681c3b3a97c9e38035b5f8f36115958568d8be18352fa2c9952c9e88f4a8/rasterio-1.5.2-cp313-cp313-manylinux_2_28_x86_64.whl", hash = "sha256:be2d2a825d545e6c6e8b2aa0d67c963e9ffc44ce3cecbab4ffe95dc87c0fc0de", size = 39113469, upload-time = "2026-09-30T15:55:57.024Z" },
+    { url = "https://files.pythonhosted.org/packages/07/e1/bbe71985a0a76403f5189a6c653dc94fe36ddd4a02cc0e3a55d6436e06c2/rasterio-1.5.2-cp313-cp313-win_amd64.whl", hash = "sha256:edbf60e95cb26604b7b884a7edf64a778a0f5ab64aed6f0b7dc9c1664967ae0c", size = 30696523, upload-time = "2026-09-30T15:55:59.565Z" },
+    { url = "https://files.pythonhosted.org/packages/c6/ec/09bd48f32f6c6aeea00f9aa664ff1e38ac918223c0bfe378117b9baf62e3/rasterio-1.5.2-cp313-cp313-win_arm64.whl", hash = "sha256:eba030745bd573df0dbecc19ed6a22f6b2037e7b1785170f84115a7c58bea72e", size = 29565599, upload-time = "2026-09-30T15:56:02.251Z" },
 ]
 
 [[package]]
@@ -3387,8 +3387,8 @@ name = "secretstorage"
 version = "3.5.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "cryptography", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
-    { name = "jeepney", marker = "sys_platform != 'emscripten' and sys_platform != 'win32'" },
+    { name = "cryptography" },
+    { name = "jeepney" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/1c/03/e834bcd866f2f8a49a85eaff47340affa3bfa391ee9912a952a1faa68c7b/secretstorage-3.5.0.tar.gz", hash = "sha256:f04b8e4689cbce351744d5537bf6b1329c6fc68f91fa666f60a380edddcd11be", size = 19884, upload-time = "2025-11-23T19:02:53.191Z" }
 wheels = [
